@@ -32,7 +32,7 @@ document.getElementById("btn-search").addEventListener("click", () => {
 
 async function viewMap() {
   const data = await getData();
-  console.log(data.ip);
+  console.log(data);
   addressDetails.innerHTML = `
   <p> IP Address <span>${data.ip}</span> </p>
   <p> Location <span>${data.location.city}, ${data.location.region} ${data.location.postalCode}</span> </p>
@@ -71,7 +71,7 @@ let map, infoWindow;
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
-    center: { lat: -20.3835157, lng: -65.9050732 },
+    center: { lat: 34.04915, lng: -118.09462 },
     mapTypeControl: true,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
