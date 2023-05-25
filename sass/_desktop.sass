@@ -1,0 +1,37 @@
+@use 'variables' as var
+
+@media screen and ( min-width: 1280px )
+  .header
+    height: 280px
+    background-image: url('../images/pattern-bg-desktop.png')
+
+    &__title
+      font-size: 32px
+      letter-spacing: -0.005em
+
+    &__search-container
+      width: 556px
+
+    &__input-search
+      width: 498px
+      &::placeholder
+        font-size: 16px
+
+  .main      
+    .address-details
+      width: 1111px
+      height: 161px
+      flex-direction: row
+      align-items: center
+      justify-content: flex-start
+      top: -80px
+      text-align: left
+
+      p
+        padding: 0 60px 0
+        border-right: 1px solid var.$Dark-Gray
+
+        &:first-child
+          padding-left: 30px
+        &:last-child
+          border: none

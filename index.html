@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="header">
+      <h1 class="header__title">IP Address Tracker</h1>
+      <div class="header__search-container">
+        <input id="input-search" type="text" class="header__input-search"
+          placeholder="Search for any IP address or domain">
+        <button id="btn-search" class="header__btn-search">
+          <img src="./images/icon-arrow.svg" alt="icon arrow">
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <div id="map" class="map"></div>
+      <div id="address-details" class="address-details">
+        <p> IP Address <span>192.212.174.101</span> </p>
+        <p> Location <span>South San Gabriel, California</span> </p>
+        <p> Timezone <span>UTC-07:00</span></p>
+        <p> ISP <span>Southern California Edison</span> </p>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDtV6dFQcy4Pu4ZZfnM_BYM_rwbm8NFaQ&callback=initMap&v=weekly"
+    defer></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</body>
+
+</html>

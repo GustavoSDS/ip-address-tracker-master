@@ -1,0 +1,29 @@
+@use 'variables' as var
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: var.$font-rubik
+
+.container
+  min-width: 360px
+  width: 100vw
+  max-width: 414px
+  height: 100%
+  margin: auto
+
+  @media screen and ( min-width: 1280px )
+    min-width: 1280px
+    width: 100%
+    max-width: 1440px
+
+.attribution
+  font-size: 11px
+  text-align: center
+
+  & a
+    color: hsl(228, 45%, 44%)
+  
+
