@@ -71,7 +71,7 @@ let map, infoWindow;
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
-    center: { lat: -27.3835157, lng: -55.9050732 },
+    center: { lat: -20.3835157, lng: -65.9050732 },
     mapTypeControl: true,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
